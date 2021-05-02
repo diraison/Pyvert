@@ -1,0 +1,25 @@
+Calcul
+===============================
+Exercice 5
+===============================
+Affecter à la variable <strong>longueur</strong> la formule donnant la longueur d'un rectangle de périmètre et de largeur donnés.
+===============================
+# Solution de l'exercice
+perimetre = 20  #? ne pas modifier
+largeur = 4     #? ne pas modifier
+
+longueur = perimetre / 2 - largeur
+
+# On peut aussi utiliser la formule :
+
+longueur = (perimetre - 2 * largeur) / 2
+===============================
+[ ["20", "4", "try:\n    print(longueur)\nexcept:\n    print('variable longueur absente')"],
+  ["32", "8", "try:\n    print(longueur)\nexcept:\n    print('variable longueur absente')"],
+  ["28", "5", "try:\n    print(longueur)\nexcept:\n    print('variable longueur absente')"] ]
+===============================
+perimetre = 20  #? ne pas modifier
+largeur = 4     #? ne pas modifier
+
+===============================
+Que reste-t-il si on soustrait deux largeurs au périmètre ?

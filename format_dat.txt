@@ -1,0 +1,24 @@
+Titre principal
+====================
+Titre secondaire
+====================
+Enoncé au format HTML
+Il peut contenir des formules mathématiques au format LaTeX, encadrées par \( et \) au lieu de $ ou $$.
+====================
+Script python solution
+Ce programme sert à la fois de réponse au bout de 9 tentatives et de générateur de résultats pour les tests à effectuer.
+====================
+Tableau de tests au format javascript
+Un test est un tableau d'entrées suivi d'une commande finale rajoutée à la fin du code python, comme "print(x)".
+[ [ "entree1", "entree2, "" ],			     // premier test,  sans code python à la fin
+  [ "entree1", "entree2", "print(total)" ],	     // second test, avec la ligne "print(total)" executée en fin de programme
+  [ "entree1", "entree2", "a=123\nprint(x-a)" ],     // troisième test, avec deux lignes "a=123" et "print(x-a)" rajoutée en fin de programme
+  [ "entree1", "entree2", "entree3", "x=#?\nprint(x*y)" ],     // quatrième test, avec '#?' remplacée par 'entree1' donnant 'x=entree1'
+  [ "f(x)", "entree2", "entree3", "#?" ],         // cinquième test, avec '#?' remplacée par 'f(x)' generant l'appelle de la fonction f avec l'argument x 
+  [...] ]
+Si l'entrée doit être interprétée comme une chaîne de caractères, alors elle doit être encadrée par des guillemets simples ou des guillemets doubles précédée d'un échappement \ comme ceci [ "'abc'", "\"def\"", "" ].
+====================
+Code python indicatif
+  C'est le programme fourni au départ, plus ou moins complet, avec ou sans erreurs à corriger.
+====================
+Indication facultative au format html

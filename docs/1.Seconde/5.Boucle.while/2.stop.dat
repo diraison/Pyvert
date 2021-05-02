@@ -1,0 +1,19 @@
+Boucle conditionnelle
+===============================
+Exercice 2
+===============================
+Complétez le programme pour qu'il s'arrête dès que l'on saisit le mot STOP.
+===============================
+# Voici la solution
+
+mot = input("Saisissez un mot")
+while mot != "STOP":
+    mot = input("Recommencez")
+print("Le programme s'est arrêté avec", mot)
+===============================
+[ [ "livre", "STOP", "" ], [ "stop", "STOP", "" ], [ "ZUT", "STOP", "" ] ]
+===============================
+mot = input("Saisissez un mot")
+while ...:  # ligne à compléter
+    mot = input("Recommencez")
+print("Le programme s'est arrêté avec", mot)

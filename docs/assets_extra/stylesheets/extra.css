@@ -1,0 +1,40 @@
+.md-typeset .admonition {
+    font-size: .80rem;
+    margin: 0.5em 0 1em 0;
+}
+
+.md-typeset div.arithmatex {
+    overflow-y: hidden;
+}
+
+article > h1 {
+    display: none;
+}
+
+.md-typeset .admonition ul {
+    line-height: 1.2;
+}
+
+a.md-nav__link--active {
+    font-weight: bold;
+}
+
+details.tip {
+    font-size: .72rem;
+}
+
+label.md-nav__link {
+    text-decoration: underline;
+}
+
+.md-main__inner {
+    margin-top: 0;
+}
+
+.question p {
+    margin: 0.5em 0;
+}
+
+.question ul {
+    margin: 0.5em 1em;
+}

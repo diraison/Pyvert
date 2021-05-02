@@ -1,0 +1,19 @@
+Affectation
+===============================
+Exercice 3
+===============================
+Complétez la ligne en affectant la valeur de <strong>3x²+5x-7</strong> à la variable <strong>y</strong>.
+===============================
+#? Solution de l'exercice
+
+y = 3 * x**2 + 5 * x - 7
+===============================
+[ ["x = 0",  "print(y)"],
+  ["x = 2",  "print(y)"],
+  ["x = -1", "print(y)"] ]
+===============================
+#? ne rien écrire sur cette ligne
+
+y =
+===============================
+Le carré de <strong>x</strong> peut s'écrire <strong>x**2</strong> ou simplement <strong>x*x</strong>.

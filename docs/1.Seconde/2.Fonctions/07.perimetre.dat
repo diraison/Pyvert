@@ -1,0 +1,17 @@
+Fonction
+===============================
+Exercice 7
+===============================
+Créez la fonction <strong>perimetre</strong> de paramètre <strong>L</strong> et <strong>l</strong> qui calcule et renvoie le périmètre du rectangle de longueur <strong>L</strong> et de largeur <strong>l</strong>.
+===============================
+# Voici la solution
+
+def perimetre(L, l):
+    return 2 * L + 2 * l
+===============================
+[ [ "perimetre(3,5)",   "z=#?\nprint(z)" ],
+  [ "perimetre(4,6)",   "z=#?\nprint(z)" ],
+  [ "perimetre(10,10)", "z=#?\nprint(z)" ] ]
+===============================
+===============================
+N'oubliez pas d'utiliser les mots clés <strong>def</strong> et <strong>return</strong>.

@@ -1,0 +1,29 @@
+Instruction conditionnelle : if else
+===============================
+Exercice 5
+===============================
+Corrigez le programme suivant pour qu'il affiche :<ul style="margin: 0;">
+<li>"<i>La porte s'ouvre...</i>" lorsqu'on répond <em>"Sésame"</em></li>
+<li>"<i>La porte reste fermée !</i>" dans le cas contraire</li></ul>
+===============================
+# Voici une réponse possible
+
+mdp = input("Mot de passe, SVP ? ")
+
+if mdp == "Sésame":
+    print("La porte s'ouvre...")
+else:
+    print("La porte reste fermée !")
+===============================
+[ ["Ouvre toi",""], ["Sésame",""], ["sésame",""], ["Sesame",""], ["sesame",""] ]
+===============================
+mdp = input("Mot de passe, SVP ? ")
+
+if mdp ... :
+    print("La porte s'ouvre...")
+
+print("La porte reste fermée !")
+===============================
+<ol><li><strong>mdp</strong>, qui est le mot de passe saisi par l'utilisateur, n'est pas toujours le bon mot de passe.</li>
+<li>Attention, le bon mot de passe contient une majuscule et un accent.</li>
+<li>Le bon mot de passe est une chaîne de caractères, il doit donc s'écrire entre guillemets dans le programme.</li></ol>

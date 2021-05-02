@@ -1,0 +1,20 @@
+Fonction
+===============================
+Exercice 10
+===============================
+Un parc d'attractions affiche les tarifs suivants :<ul>
+<li>8,50 € par enfant</li>
+<li>12,00 € par adulte</li></ul>
+Vous devez écrire une fonction <strong>prix()</strong> qui renvoie le prix total à payer,
+à partir du nombre <strong>n</strong> d'enfants et du nombre <strong>p</strong> d'adultes.
+===============================
+# Voici une reponse possible
+
+def prix(n, p):
+    return 8.50 * n + 12.00 * p
+===============================
+[ ["prix(4,0)", "t=#?\nprint(float(t))"],
+  ["prix(0,2)", "t=#?\nprint(float(t))"],
+  ["prix(3,2)", "t=#?\nprint(float(t))"] ]
+===============================
+def prix(n, p):

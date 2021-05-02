@@ -1,0 +1,26 @@
+Instruction conditionnelle : if else
+===============================
+Exercice 4
+===============================
+Modifiez le programme pour qu'il affiche la réponse qui convient suivant la longueur et la largeur du rectangle.
+===============================
+# Voici une réponse possible
+
+longueur = float( input("Longueur ? ") )
+largeur = float( input("Largeur ? ") )
+
+if longueur == largeur:
+    print("Le rectangle est un carré.")
+else:
+    print("Le rectangle n'est pas un carré.")
+===============================
+[ ["6","6",""], ["5","3",""], ["2.4","3.6",""] ]
+===============================
+longueur = float( input("Longueur ? ") )
+largeur = float( input("Largeur ? ") )
+
+print("Le rectangle est un carré.")
+
+print("Le rectangle n'est pas un carré.")
+===============================
+N'oubliez pas d'indenter le code, c'est à dire de décaller de 4 espaces les instructions print.
