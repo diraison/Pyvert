@@ -7,12 +7,16 @@ import getopt
 ################################################
 
 def usage(cmdname, exitcode):
-    print("""usage : {}
+    print("""usage : {} [-h] [PYEXO_URL]
 
-        Genere les fichiers markdown correspondant aux exercices
-        placés dans docs/ et portant l'extension .dat
-        Puis génère le fichier mkdocs.yml en recréant toute
-        l'arborescence.
+        Génère les fichiers markdown correspondant aux exercices placés
+        dans docs/ et portant l'extension .dat
+        Puis génère le fichier mkdocs.yml en recréant toute l'arborescence
+        en respectant l'ordre des numéros préfixes (qui sont retirés des
+        pages web).
+
+        PYEXO_URL est l'url utilisée pour le cadre intégré à chaque page
+        d'exercice. Par défaut, il correspond à "/pyexo.html".
 """.format(cmdname))
     sys.exit(exitcode)
 
@@ -25,7 +29,9 @@ def configure(argv):
         if opt in ("-h", "--help"):
             usage(argv[0], 0)
     if len(args) == 0:
-        return
+        return "/pyexo.html"
+    elif len(args) == 1:
+        return args[0]
     print("trop d'arguments")
     usage(argv[0], 1)
 
@@ -55,8 +61,8 @@ def creer_markdown(chemin, fichier, patron):
     print("FAIT")
     return os.path.join(chemin, nouveau_fichier)
 
-def generer_markdown():
-    patron = lecture_patron("exercice.tmpl")
+def generer_markdown(pyexo_url):
+    patron = lecture_patron("exercice.tmpl").replace("PYEXO_URL", pyexo_url)
     exercices = []
     for chemin, repertoires, fichiers in os.walk("docs"):
         # fichiers.sort()
@@ -120,8 +126,8 @@ def generer_mkdocs(exercices):
 ################################################
 
 def main(argv):
-    configure(argv)
-    exercices = generer_markdown()
+    pyexo_url = configure(argv)
+    exercices = generer_markdown(pyexo_url)
     generer_mkdocs(exercices)
 
 
