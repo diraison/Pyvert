@@ -8,21 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Setup Python 3.x
-      - uses: actions/setup-python@v2
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
 
       - name: Install dependencies
-      - run: |
+        run: |
           pip install mkdocs-material
           pip install mkdocs-macros-plugin
 
       - name: Build markdown
-      - run: python3 build.py
+        run: python3 build.py
 
       - name: Deploy
-      - run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force
 
