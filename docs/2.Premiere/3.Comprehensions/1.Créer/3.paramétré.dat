@@ -1,6 +1,6 @@
 Création de tableau
 ===============================
-Exercice 2
+Exercice 3
 ===============================
 Complétez la ligne pour créer, par compréhension, un tableau <strong>L</strong> contenant <strong>n</strong> éléments tous égaux à <strong>x</strong>.<br>
 Ainsi pour <strong>n = 3</strong> et <strong>x = 'z'</strong> on doit obtenir un tableau <strong>L</strong> égal à <strong>['z', 'z', 'z']</strong>.
@@ -30,5 +30,4 @@ L = [...]     # ligne à compléter
 #! voir le résultat
 print(L)
 ===============================
-Une compréhensien est une boucle <strong>for</strong> précédée des éléments à créer et écrite à l'intérieur du tableau à générer, comme ceci :<br>
-<strong>[i+1 for i in range(10)]</strong>
+Une compréhensien est une boucle <strong>for</strong> précédée des éléments à créer et écrite à l'intérieur du tableau à générer, comme ceci :<br><strong>[i+1 for i in range(10)]</strong>
