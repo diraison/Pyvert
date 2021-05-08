@@ -1,6 +1,6 @@
 ## Présentation
 
-Le site Pyvert propose quelques exercices de base d'entraînement à la programmation en langage Python.
+Le site Pyvert propose {{ pyvert.nbexos }} exercices de base d'entraînement à la programmation en langage Python.
 
 Pour chaque exercice, le bouton **Exécuter** vous permet d'exécuter le code saisi lors de la mise au point de votre réponse, et le bouton **Vérifier la réponse** vous permet de soumettre votre code à quelques tests. En cas d'échec, un rapport dresse alors un bilan des tests qui n'ont pas été réussis pour vous permettre de corriger votre réponse. À la dixième vérification, une proposition de correction est affichée afin de vous aider à progresser.
 

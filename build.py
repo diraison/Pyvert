@@ -114,7 +114,7 @@ def generer_mkdocs(exercices):
     patron = lecture_patron("mkdocs.tmpl")
     arborescence = generer_arborescence(exercices)
     print("=> mkdocs.yml", end="\t")
-    yaml = patron.replace("EXERCICES", arborescence)
+    yaml = patron.replace("EXERCICES", arborescence).replace("NBEXOS", str(len(exercices)))
     try:
         with open("mkdocs.yml", "w") as fmkdocs:
             fmkdocs.write(yaml)
