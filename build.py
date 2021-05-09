@@ -11,9 +11,12 @@ import os
 import sys
 import getopt
 
+
 PYEXO_URL = "/pyexo.html"
 
+
 ################################################
+
 
 def usage(cmdname, exitcode):
     """ affiche les options de la ligne de commande et quitte le programme """
@@ -29,6 +32,7 @@ def usage(cmdname, exitcode):
         d'exercice. Par défaut, il correspond à "{}".
 """.format(cmdname, PYEXO_URL))
     sys.exit(exitcode)
+
 
 def configure(argv):
     """ lecture des options de configuration et renvoie de l'url de pyexo """
@@ -46,7 +50,9 @@ def configure(argv):
         usage(argv[0], 1)   # trop d'arguments
     return pyexo_url or PYEXO_URL
 
+
 ################################################
+
 
 def lecture_patron(chemin):
     """ renvoie le contenu du fichier patron """
@@ -54,7 +60,9 @@ def lecture_patron(chemin):
         patron = fichier.read()
     return patron
 
+
 ################################################
+
 
 def creer_markdown(chemin, fichier, patron):
     """ génère le fichier markdown d'un exercice """
@@ -75,6 +83,7 @@ def creer_markdown(chemin, fichier, patron):
     print("FAIT")
     return os.path.join(chemin, nouveau_fichier)
 
+
 def generer_markdown(pyexo_url):
     """ génère l'ensemble de fichiers markdown des exercices """
     patron = lecture_patron("exercice.tmpl").replace("PYEXO_URL", pyexo_url)
@@ -88,7 +97,9 @@ def generer_markdown(pyexo_url):
                     exercices.append(exercice)
     return exercices
 
+
 ################################################
+
 
 def simplifier_nom(nom):
     """ supprime le préfixe numérique, les extensions et place des espaces """
@@ -98,6 +109,7 @@ def simplifier_nom(nom):
     nom = nom[:-4] if nom.endswith(".dat") else nom
     nom = nom.replace(".", " ").replace("_", " ")
     return nom
+
 
 def parcourir_arbre(arbre, niveau):
     """ renvoie la chaîne de navigation correspondant à l'arborescence """
@@ -111,6 +123,7 @@ def parcourir_arbre(arbre, niveau):
             nav += "  " * niveau + "- \"{}\":\n".format(simplifier_nom(chemin))
             nav += parcourir_arbre(arbre[chemin], niveau+1)
     return nav
+
 
 def generer_arborescence(exercices):
     """ génère l'arborescence des exercices et renvoie la chaîne de navigation """
@@ -127,6 +140,7 @@ def generer_arborescence(exercices):
                 sousarbre[exercice] = chemin
     return parcourir_arbre(arbre["docs"], 1)
 
+
 def generer_mkdocs(exercices):
     """ génère le fichier mkdocs.yml à partir du patron et des exercices """
     print("mkdocs.tmpl", end="\t")
@@ -142,7 +156,9 @@ def generer_mkdocs(exercices):
         return
     print("FAIT")
 
+
 ################################################
+
 
 def main(argv):
     """ fonction principale appelée avec les arguments de la ligne de commande """
