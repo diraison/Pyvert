@@ -1,0 +1,39 @@
+Tableaux
+===============================
+Exercice 3
+===============================
+Écrire une fonction <strong>recherche</strong> qui prend en paramètre un tableau de nombres entiers <strong>tab</strong>, et qui renvoie la liste (éventuellement vide) des couples d'entiers consécutifs successifs qu'il peut y avoir dans <strong>tab</strong>.<br>
+Exemples :
+<ul>
+<li><strong>recherche([1,4,3,5])</strong> renvoie <strong>[]</strong></li>
+<li><strong>recherche([1,4,5,3])</strong> renvoie <strong>[(4,5)]</strong></li>
+<li><strong>recherche([7,1,2,5,3,4])</strong> renvoie <strong>[(1,2),(3,4)]</strong></li>
+<li><strong>recherche([5,1,2,3,8,-5,-4,7])</strong> renvoie <strong>[(1,2),(2,3),(-5,-4)]</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def recherche(tab):
+    consecutifs = []
+    for i in range(len(tab)-1):
+        if tab[i+1] == tab[i] + 1:
+            couple = (tab[i], tab[i+1])
+            consecutifs.append(couple)
+    return consecutifs
+
+#! exemple
+
+print(recherche([7,1,2,5,3,4]))
+===============================
+[ ["[1,4,3,5]", "#!\ns=#?\ntry:\n    print(recherche(s))\nexcept:\n    print('exception')"],
+  ["[1,4,5,3]", "#!\ns=#?\ntry:\n    print(recherche(s))\nexcept:\n    print('exception')"],
+  ["[7,1,2,5,3,4]", "#!\ns=#?\ntry:\n    print(recherche(s))\nexcept:\n    print('exception')"],
+  ["[5,1,2,3,8,-5,-4,7]", "#!\ns=#?\ntry:\n    print(recherche(s))\nexcept:\n    print('exception')"] ]
+===============================
+def recherche(tab):
+
+
+
+#! exemple
+
+print(recherche([7,1,2,5,3,4]))

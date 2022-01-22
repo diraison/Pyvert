@@ -1,0 +1,39 @@
+Chaîne de caractères
+===============================
+Exercice 1
+===============================
+Écrire une fonction <strong>recherche</strong> qui prend en paramètres <strong>caractere</strong>, un caractère, et
+<strong>mot</strong>, une chaîne de caractères, et qui renvoie le nombre d'occurrences de <strong>caractere</strong>
+dans <strong>mot</strong>, c'est-à-dire le nombre de fois où <strong>caractere</strong> apparaît dans <strong>mot</strong>.
+<br>
+Exemples :
+<ul>
+<li><strong>recherche('e',"sciences")</strong> renvoie 2</li>
+<li><strong>recherche('i',"mississippi")</strong> renvoie 4</li>
+<li><strong>recherche('a',"mississippi")</strong> renvoie 0</li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def recherche(caractere, mot):
+    effectif = 0
+    for lettre in mot:
+        if lettre == caractere:
+            effectif += 1
+    return effectif
+
+#! exemple
+
+print(recherche('e',"sciences"))
+===============================
+[ ["recherche('e',\"sciences\")", "#!\ntry:\n    s=#?\n    print(s)\nexcept:\n    print('exception')"],
+  ["recherche('i',\"mississippi\")", "#!\ntry:\n    s=#?\n    print(s)\nexcept:\n    print('exception')"],
+  ["recherche('a',\"mississippi\")", "#!\ntry:\n    s=#?\n    print(s)\nexcept:\n    print('exception')"] ]
+===============================
+def recherche(caractere, mot):
+
+
+
+#! exemple
+
+print(recherche('e',"sciences"))

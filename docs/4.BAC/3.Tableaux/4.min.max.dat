@@ -1,0 +1,41 @@
+Tableaux
+===============================
+Exercice 4
+===============================
+Écrire une fonction <strong>rechercheMinMax</strong> qui prend en paramètre un tableau de nombres non triés <strong>tab</strong>, et qui renvoie la plus petite et la plus grande valeur du tableau sous la forme d'un dictionnaire à deux clés <strong>'min'</strong> et <strong>'max'</strong>. Les tableaux seront représentés sous forme de liste Python.<br>
+Exemples :
+<ul>
+<li><strong>rechercheMinMax([0,1,4,2,-2,9,3,1,7,1])</strong> renvoie <strong>{'min': -2, 'max': 9}</strong></li>
+<li><strong>rechercheMinMax([])</strong> renvoie <strong>{'min':None, 'max':None}</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def rechercheMinMax(tab):
+    if tab == []:
+        return {'min':None, 'max':None}
+    dico = {'min':tab[0], 'max':tab[0]}
+    for valeur in tab:
+        if valeur < dico['min']:
+            dico['min'] = valeur
+        if valeur > dico['max']:
+            dico['max'] = valeur
+    return dico
+
+#! exemple
+
+print(rechercheMinMax([0,1,4,2,-2,9,3,1,7,1]))
+===============================
+[ ["[0,1,4,2,-2,9,3,1,7,1]", "#!\nl=#?\ntry:\n    s=rechercheMinMax(l)\n    print(\"\{'min':{}, 'max':{}\}\".format(s['min'],s['max']))\nexcept:\n    print('exception')"],
+  ["[]", "#!\nl=#?\ntry:\n    s=rechercheMinMax(l)\n    print(\"\{'min':{}, 'max':{}\}\".format(s['min'],s['max']))\nexcept:\n    print('exception')"],
+  ["[1,2,3,4,5]", "#!\nl=#?\ntry:\n    s=rechercheMinMax(l)\n    print(\"\{'min':{}, 'max':{}\}\".format(s['min'],s['max']))\nexcept:\n    print('exception')"],
+  ["[9,9,9]", "#!\nl=#?\ntry:\n    s=rechercheMinMax(l)\n    print(\"\{'min':{}, 'max':{}\}\".format(s['min'],s['max']))\nexcept:\n    print('exception')"],
+  ["[8,7,6,5]", "#!\nl=#?\ntry:\n    s=rechercheMinMax(l)\n    print(\"\{'min':{}, 'max':{}\}\".format(s['min'],s['max']))\nexcept:\n    print('exception')"] ]
+===============================
+def rechercheMinMax(tab):
+
+
+
+#! exemple
+
+print(rechercheMinMax([0,1,4,2,-2,9,3,1,7,1]))

@@ -1,0 +1,58 @@
+Nombres
+===============================
+Exercice 1
+===============================
+Soit un nombre entier <strong>n</strong> supérieur ou égal à 1 :
+<ul><li>s'il est pair, on le divise par 2 ;</li>
+<li>s'il est impair, on le multiplie par 3 et on ajoute 1.</li></ul>
+Puis on recommence ces étapes avec le nouvel entier <strong>n</strong> ainsi obtenu, jusqu’à ce que l'on obtienne la valeur 1.<br>
+On admet que, quel que soit l'entier <strong>n</strong> choisi au départ, la suite finit toujours sur la
+valeur 1.<br>
+Écrire une fonction <strong>calcul</strong> prenant en paramètres un entier <strong>n</strong> strictement positif et qui
+renvoie la liste des valeurs successives de <strong>n</strong> jusqu’à atteindre 1.<br>
+Exemple : <strong>calcul(7)</strong> renvoie <strong>[7,22,11,34,17,52,26,13,40,20,10,5,16,8,4,2,1]</strong>.
+===============================
+# Voici une implémentation possible
+
+def calcul(n):
+    liste = [n]
+    while n != 1:
+        if n % 2 == 0:    # n est-il pair ?
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        liste.append(n)
+    return liste
+
+
+#! exemple
+
+print(calcul(7))
+===============================
+[ ["7", "#!\nn=#?\ntry:\n    print(calcul(n))\nexcept:\n    print('exception')"],
+  ["1", "#!\nn=#?\ntry:\n    print(calcul(n))\nexcept:\n    print('exception')"],
+  ["8", "#!\nn=#?\ntry:\n    print(calcul(n))\nexcept:\n    print('exception')"],
+  ["3", "#!\nn=#?\ntry:\n    print(calcul(n))\nexcept:\n    print('exception')"] ]
+===============================
+def calcul(n):
+
+
+
+#! exemple
+
+print(calcul(7))
+===============================
+Consigne détaillée :<br>
+Soit un nombre entier supérieur ou égal à 1 :
+<ul><li>s'il est pair, on le divise par 2 ;</li>
+<li>s'il est impair, on le multiplie par 3 et on ajoute 1.</li></ul>
+Puis on recommence ces étapes avec le nombre entier obtenu, jusqu’à ce que l'on obtienne la valeur 1.<br>
+On définit ainsi la suite (<i>u<sub>n</sub></i>) par :
+<ul><li><i>u<sub>0</sub></i> = <i>k</i> , où <i>k</i> est un entier choisi initialement ;</li>
+<li><i>u<sub>n+1</sub></i> = <i>u<sub>n</sub></i> / 2 si <i>u<sub>n</sub></i> est pair ;</li>
+<li><i>u<sub>n+1</sub></i> = 3 × <i>u<sub>n</sub></i> + 1 si <i>u<sub>n</sub></i> est impair.</li></ul>
+On admet que, quel que soit l'entier <i>k</i> choisi au départ, la suite finit toujours sur la
+valeur 1.<br>
+Écrire une fonction <strong>calcul</strong> prenant en paramètres un entier <strong>n</strong> strictement positif et qui
+renvoie la liste des valeurs <i>u<sub>n</sub></i>, en partant de $k$ et jusqu’à atteindre 1.<br>
+Exemple : <strong>calcul(7)</strong> renvoie <strong>[7,22,11,34,17,52,26,13,40,20,10,5,16,8,4,2,1]</strong>.
