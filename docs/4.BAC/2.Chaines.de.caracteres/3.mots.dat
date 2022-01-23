@@ -1,0 +1,60 @@
+Chaîne de caractères
+===============================
+Exercice 3
+===============================
+Pour cet exercice :
+<ul>
+<li>On appelle « mot » une chaîne de caractères composée avec des caractères choisis parmi les 26 lettres minuscules ou majuscules de l'alphabet,</li>
+<li>On appelle « phrase » une chaîne de caractères :
+    <ul><li>composée avec un ou plusieurs « mots » séparés entre eux par un seul caractère espace '&nbsp;',</li>
+    <li>se finissant :
+        <ul><li>soit par un point '.' qui est alors collé au dernier mot,</li>
+        <li>soit par un point d'exclamation '!' ou d'interrogation '?' qui est alors séparé du dernier mot par un seul caractère espace '&nbsp;'.</li>
+        </ul>
+    </li>
+    </ul>
+</li>
+</ul>
+Voici quatre exemples de phrases :
+<ul>
+<li>'Le point d exclamation est separe !'</li>
+<li>'Il y a un seul espace entre les mots !'</li>
+<li>'Le point final est colle au dernier mot.'</li>
+<li>'Gilbouze macarbi acra cor ed filbuzine ?'</li>
+</ul>
+Après avoir remarqué le lien entre le nombre de mots et le nombres de caractères espace dans une phrase, programmer une fonction <strong>nombre_de_mots</strong> qui prend en paramètre une phrase et renvoie le nombre de mots présents dans cette phrase.<br>
+Exemples :
+<ul>
+<li><strong>nombre_de_mots('Le point d exclamation est separe !')</strong> renvoie 6</li>
+<li><strong>nombre_de_mots('Il y a un seul espace entre les mots !')</strong> renvoie 9</li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def nombre_de_mots(phrase):
+    espaces = 0
+    for caractere in phrase:
+        if caractere == " ":
+            espaces += 1
+    if phrase[-1] == ".":
+        return espaces + 1
+    else:
+        return espaces
+
+#! exemple
+
+print(nombre_de_mots('Le point d exclamation est separe !'))
+===============================
+[ ["'Le point d exclamation est separe !'", "#!\ns=#?\ntry:\n    print(nombre_de_mots(s))\nexcept:\n    print('exception')"],
+  ["'Il y a un seul espace entre les mots !'", "#!\ns=#?\ntry:\n    print(nombre_de_mots(s))\nexcept:\n    print('exception')"],
+  ["'Le point final est colle au dernier mot.'", "#!\ns=#?\ntry:\n    print(nombre_de_mots(s))\nexcept:\n    print('exception')"],
+  ["'Gilbouze macarbi acra cor ed filbuzine ?'", "#!\ns=#?\ntry:\n    print(nombre_de_mots(s))\nexcept:\n    print('exception')"],
+  ["'Stop.'", "#!\ns=#?\ntry:\n    print(nombre_de_mots(s))\nexcept:\n    print('exception')"] ]
+===============================
+def nombre_de_mots(phrase):
+
+
+
+#! exemple
+
+print(nombre_de_mots('Le point d exclamation est separe !'))
