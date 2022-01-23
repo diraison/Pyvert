@@ -1,0 +1,58 @@
+Nombres
+===============================
+Exercice 2
+===============================
+On modélise la représentation binaire d'un entier non signé par un tableau d'entiers dont les éléments sont 0 ou 1.<br>
+Par exemple, le tableau [1, 0, 1, 0, 0, 1, 1] représente l'écriture binaire de l'entier dont l'écriture décimale est <br>
+<center>2**6 + 2**4 + 2**1 + 2**0 = 83.</center><br>
+À l'aide d'un parcours séquentiel, écrire la fonction <strong>convertir</strong> répondant aux spécifications suivantes :<br>
+<strong>def convertir(T):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; """<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T est un tableau d'entiers, dont les éléments sont 0 ou 1 et représentant un entier écrit en binaire.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Renvoie l'écriture décimale de l'entier positif dont la représentation binaire est donnée par le tableau T.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; """</strong><br>
+Exemples :
+<ul>
+<li><strong>convertir([1, 0, 1, 0, 0, 1, 1])</strong> renvoie <strong>83</strong></li>
+<li><strong>convertir([1, 0, 0, 0, 0, 0, 1, 0])</strong> renvoie <strong>130</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def convertir(T):
+    n = 0
+    exposant = len(T)-1
+    for bit in T:
+        if bit == 1:
+            n += 2**exposant
+        exposant -= 1
+    return n
+
+# autre solution
+
+def convertir(T):
+    n = 0
+    for bit in T:
+        n = 2 * n + bit
+    return n
+
+
+#! exemple
+
+print(convertir([1,0,1,0,0,1,1]))
+===============================
+[ ["[1,0,1,0,0,1,1]", "#!\ns=#?\ntry:\n    print(convertir(s))\nexcept:\n    print('exception')"],
+  ["[1,0,0,0,0,0,1,0]", "#!\ns=#?\ntry:\n    print(convertir(s))\nexcept:\n    print('exception')"],
+  ["[0]", "#!\ns=#?\ntry:\n    print(convertir(s))\nexcept:\n    print('exception')"],
+  ["[1]", "#!\ns=#?\ntry:\n    print(convertir(s))\nexcept:\n    print('exception')"],
+  ["[1,0,0,0]", "#!\ns=#?\ntry:\n    print(convertir(s))\nexcept:\n    print('exception')"] ]
+===============================
+def convertir(T):
+
+
+
+#! exemple
+
+print(convertir([1,0,1,0,0,1,1]))
+===============================
+
