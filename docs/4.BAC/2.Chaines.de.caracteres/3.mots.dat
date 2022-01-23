@@ -25,8 +25,8 @@ Voici quatre exemples de phrases :
 Après avoir remarqué le lien entre le nombre de mots et le nombres de caractères espace dans une phrase, programmer une fonction <strong>nombre_de_mots</strong> qui prend en paramètre une phrase et renvoie le nombre de mots présents dans cette phrase.<br>
 Exemples :
 <ul>
-<li><strong>nombre_de_mots('Le point d exclamation est separe !')</strong> renvoie 6</li>
-<li><strong>nombre_de_mots('Il y a un seul espace entre les mots !')</strong> renvoie 9</li>
+<li><strong>nombre_de_mots('Le point d exclamation est separe !')</strong> renvoie <strong>6</strong></li>
+<li><strong>nombre_de_mots('Il y a un seul espace entre les mots !')</strong> renvoie <strong>9</strong></li>
 </ul>
 ===============================
 # Voici une implémentation possible

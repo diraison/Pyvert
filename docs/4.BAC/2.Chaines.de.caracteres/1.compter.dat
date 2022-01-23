@@ -8,9 +8,9 @@ dans <strong>mot</strong>, c'est-à-dire le nombre de fois où <strong>caractere
 <br>
 Exemples :
 <ul>
-<li><strong>recherche('e',"sciences")</strong> renvoie 2</li>
-<li><strong>recherche('i',"mississippi")</strong> renvoie 4</li>
-<li><strong>recherche('a',"mississippi")</strong> renvoie 0</li>
+<li><strong>recherche('e',"sciences")</strong> renvoie <strong>2</strong></li>
+<li><strong>recherche('i',"mississippi")</strong> renvoie <strong>4</strong></li>
+<li><strong>recherche('a',"mississippi")</strong> renvoie <strong>0</strong></li>
 </ul>
 ===============================
 # Voici une implémentation possible
