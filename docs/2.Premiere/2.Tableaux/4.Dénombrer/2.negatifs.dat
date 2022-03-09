@@ -3,7 +3,7 @@ Dénombrer
 Exercice 2
 ===============================
 Vous devez créer une fonction <strong>compter_negatifs(T)</strong> dont le paramètre <strong>T</strong> est un tableau (non vide) d'entiers ou de flottants et qui renvoie le nombre d'élements strictement négatifs dans ce tableau.<br>
-Ainsi <strong>compter_negatifs([7,-3,6,-8,0])</strong> renvoie <strong>-2</strong>.
+Ainsi <strong>compter_negatifs([7,-3,6,-8,0])</strong> renvoie <strong>2</strong>.
 ===============================
 # Voici une solution
 
