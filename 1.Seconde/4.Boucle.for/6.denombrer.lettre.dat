@@ -1,0 +1,35 @@
+Boucle bornée
+===============================
+Exercice 6
+===============================
+Complétez le programme de la fonction <strong>compter(lettre, phrase)</strong> pour qu'elle renvoie le nombre de fois que la lettre apparaît dans la phrase.
+===============================
+# Voici la solution
+
+def compter(lettre, phrase):
+    n = 0                        # initialiser le compteur
+    for caractere in phrase:     # parcourir les lettres
+        if caractere == lettre:  # est-ce le caractere cherché
+            n = n + 1            # si oui on incrémente
+    return n                     # renvoyer le compteur
+
+phrase = "Ceci est un exemple"      #? exemple
+lettre = "e"                        #? exemple
+
+n = compter(lettre, phrase)
+print("Il y a", n, lettre, "dans :", phrase)
+===============================
+[ ['"Ceci est un exemple"', '"e"', ""], ['"informatique"', '"i"', ""], ['"abscisses"', '"s"', ""], ['"zozo"', '"t"', ""] ]
+===============================
+def compter(lettre, phrase):
+    n = 0
+    #
+    # partie à compléter
+    #
+    return n
+
+phrase = "Ceci est un exemple"      #? exemple
+lettre = "e"                        #? exemple
+
+n = compter(lettre, phrase)
+print("Il y a", n, lettre, "dans :", phrase)

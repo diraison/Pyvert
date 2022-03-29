@@ -1,0 +1,32 @@
+Dénombrer
+===============================
+Exercice 2
+===============================
+Vous devez créer une fonction <strong>compter_negatifs(T)</strong> dont le paramètre <strong>T</strong> est un tableau (non vide) d'entiers ou de flottants et qui renvoie le nombre d'élements strictement négatifs dans ce tableau.<br>
+Ainsi <strong>compter_negatifs([7,-3,6,-8,0])</strong> renvoie <strong>2</strong>.
+===============================
+# Voici une solution
+
+def compter_negatifs(T):
+    npos = 0
+    for element in T:
+        if element < 0:
+            npos += 1
+    return npos
+
+#! exemple
+
+print(compter_negatifs([7,-3,6,-8,0]))
+===============================
+[ ["[7,-3,6,-8,0]",   "#!\nt=#?\ntry:\n    print(compter_negatifs(t))\nexcept:\n    print('exception')"],
+  ["[9,3,1,5]",       "#!\nt=#?\ntry:\n    print(compter_negatifs(t))\nexcept:\n    print('exception')"],
+  ["[-10,5,0,-6,-4]", "#!\nt=#?\ntry:\n    print(compter_negatifs(t))\nexcept:\n    print('exception')"],
+  ["[-2,-2,-2]",      "#!\nt=#?\ntry:\n    print(compter_negatifs(t))\nexcept:\n    print('exception')"] ]
+===============================
+def compter_negatifs(T):
+    ...
+
+
+#! exemple
+
+print(compter_negatifs([7,-3,6,-8,0]))

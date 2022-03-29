@@ -1,0 +1,42 @@
+Ajouter et Supprimer
+===============================
+Exercice 1
+===============================
+Créez une procédure <strong>copier(src, dst)</strong> qui copie les éléments du tableau <strong>src</strong> dans le tableau <strong>dst</strong> dans la limite de ce qu'il peut contenir.<br>
+Ainsi, si <strong>d = [0,0,0]</strong> alors l'appel <strong>copier([4,3,9,5], d)</strong> donne <strong>d = [4,3,9]</strong>.
+===============================
+# Une première solution
+def copier(src, dst):
+    i = 0
+    while i < len(src) and i < len(dst):
+        dst[i] = src[i]
+        i += 1
+
+# Seconde solution avec une boucle for
+def copier(src, dst):
+    taille = min(len(src),len(dst))
+    for i in range(taille):
+        dst[i] = src[i]
+
+#! exemple
+
+d = [0, 0, 0]
+copier([4, 3, 9, 5], d)
+print(d)
+===============================
+[ ["[4,3,9,5]", "[0,0,0]", "#!\nsrc=#?\ndst=#?\ntry:\n    copier(src,dst)\n    print(dst)\nexcept:\n    print('exception')"],
+  ["[2,8,3]",   "[0,0,0]", "#!\nsrc=#?\ndst=#?\ntry:\n    copier(src,dst)\n    print(dst)\nexcept:\n    print('exception')"],
+  ["[1,6]",   "[0,0,0,0]", "#!\nsrc=#?\ndst=#?\ntry:\n    copier(src,dst)\n    print(dst)\nexcept:\n    print('exception')"],
+  ["[7,0,1]",        "[]", "#!\nsrc=#?\ndst=#?\ntry:\n    copier(src,dst)\n    print(dst)\nexcept:\n    print('exception')"] ]
+===============================
+def copier(src, dst):
+    ...
+
+
+#! exemple
+
+d = [0, 0, 0]
+copier([4, 3, 9, 5], d)
+print(d)
+===============================
+Il faut veiller à ne pas dépasser la taille du tableau <strong>src</strong> ni celle de <strong>dst</strong> lors de la recopie des éléments.

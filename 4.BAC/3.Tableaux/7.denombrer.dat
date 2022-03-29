@@ -1,0 +1,41 @@
+Tableaux
+===============================
+Exercice 7
+===============================
+Écrire une fonction <strong>occurrence_max</strong> prenant en paramètre une chaîne de caractères <strong>chaine</strong> et qui renvoie le caractère le plus fréquent de la chaîne. La chaine ne contient que des lettres en minuscules sans accent.<br>
+On pourra s'aider du tableau <strong>alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o,', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']</strong> et du tableau <strong>occurrence</strong> de 26 éléments où l'on mettra dans <strong>occurrence[i]</strong> le nombre d'apparitions de <strong>alphabet[i]</strong> dans la chaine. Puis on calculera l'indice <strong>k</strong> d'un maximum du tableau occurrence et on affichera <strong>alphabet[k]</strong>.<br>
+Exemple : Avec la chaîne <strong>ch='je suis en terminale et je passe le bac et je souhaite poursuivre des etudes pour devenir expert en informatique'</strong>, <strong>occurrence_max(ch)</strong> renvoie <strong>'e'</strong>.
+===============================
+# Voici une implémentation possible
+alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o,','p','q','r','s','t','u','v','w','x','y','z']
+
+def occurrence_max(chaine):
+    occurrence = [0] * 26
+    for lettre in chaine:
+        for i in range(26):
+            if alphabet[i] == lettre:
+                occurrence[i] += 1
+                break
+    k = 0
+    for i in range(26):
+        if occurrence[k] < occurrence[i]:
+            k = i
+    return alphabet[k]
+
+#! exemple
+ch='je suis en terminale et je passe le bac et je souhaite poursuivre des etudes pour devenir expert en informatique'
+print(occurrence_max(ch))
+===============================
+[ ["'je suis en terminale et je passe le bac et je souhaite poursuivre des etudes pour devenir expert en informatique'", "#!\ns=#?\ntry:\n    print(occurrence_max(s))\nexcept:\n    print('exception')"],
+  ["'aaaa'", "#!\ns=#?\ntry:\n    print(occurrence_max(s))\nexcept:\n    print('exception')"],
+  ["'informatique'", "#!\ns=#?\ntry:\n    print(occurrence_max(s))\nexcept:\n    print('exception')"],
+  ["'cet ete'", "#!\ns=#?\ntry:\n    print(occurrence_max(s))\nexcept:\n    print('exception')"] ]
+===============================
+alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o,','p','q','r','s','t','u','v','w','x','y','z']
+
+def occurrence_max(chaine):
+
+
+#! exemple
+ch='je suis en terminale et je passe le bac et je souhaite poursuivre des etudes pour devenir expert en informatique'
+print(occurrence_max(ch))

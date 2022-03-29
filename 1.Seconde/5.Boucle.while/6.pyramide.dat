@@ -1,0 +1,30 @@
+Boucle conditionnelle
+===============================
+Exercice 6
+===============================
+Complétez le programme pour obtenir la hauteur de la pyramide que l'on peut constituer avec <strong>N</strong> billes disposées comme ceci 
+<img style="vertical-align:middle" src="https://diraison.github.io/GenPyExo/images/pyramide.jpg">
+===============================
+# Voici la solution
+
+N = 1000           #? exemple
+
+hauteur = 1
+billes = 0
+while billes <= N:
+    billes = billes + hauteur * hauteur
+    hauteur = hauteur + 1
+print("La hauteur est", hauteur-1)
+===============================
+[ [ "1000", "" ], ["5000", ""] ]
+===============================
+N = 1000           #? exemple
+
+hauteur = 1
+billes = 0
+while ...:
+    ...
+    ...
+print("La hauteur est", hauteur-1)
+===============================
+La pyramide a une base carrée, donc tout en haut on a 1 bille, en dessous on a 2²=4 billes en plus, en dessous on a 3²=9 billes en plus...

@@ -1,0 +1,16 @@
+Affectation
+===============================
+Exercice 6
+===============================
+Complétez la ligne en affectant la valeur de \(\frac{n^2-1}{2n+3}\) à la variable <strong>resultat</strong>.
+===============================
+#? Solution de l'exercice
+
+resultat = (n**2 - 1) / (2 * n + 3)
+===============================
+[ ["n = 0", "try:\n    print(resultat)\nexcept:\n    print('variable resultat absente')"],
+  ["n = 1", "try:\n    print(resultat)\nexcept:\n    print('variable resultat absente')"],
+  ["n = 2", "try:\n    print(resultat)\nexcept:\n    print('variable resultat absente')"] ]
+===============================
+#? ne rien écrire sur cette ligne
+

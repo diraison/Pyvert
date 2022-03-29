@@ -1,0 +1,20 @@
+Fonction
+===============================
+Exercice 8
+===============================
+Créez la fonction <strong>circonference</strong> de paramètre <strong>rayon</strong> qui calcule et renvoie le périmètre du cercle de rayon donné.<br>
+On définira la constante PI de valeur 3.1415926 dans la fonction elle-même.
+===============================
+# Voici la solution
+
+def circonference(rayon):
+    PI = 3.1415926
+    perimetre = 2 * PI * rayon
+    return perimetre
+===============================
+[ [ "circonference(7)",   "z=#?\nprint(z)" ],
+  [ "circonference(10)",  "z=#?\nprint(z)" ],
+  [ "circonference(0.5)", "z=#?\nprint(z)" ] ]
+===============================
+===============================
+La circonférence d'un cercle de rayon \(r\) est égale à \(2\pi r\).

@@ -1,0 +1,56 @@
+Tableaux
+===============================
+Exercice 6
+===============================
+Écrire une fonction <strong>conv_bin</strong> qui prend en paramètre un entier positif <strong>n</strong> et renvoie un
+couple <strong>(bits,taille)</strong> où :
+<ul>
+<li><strong>bits</strong> est une liste d'entiers correspondant à la représentation binaire de <strong>n</strong>;</li>
+<li><strong>taille</strong> correspond aux nombre de bits qui constituent <strong>bits</strong>.</li>
+</ul>
+Exemple : <strong>conv_bin(9)</strong> renvoie <strong>([1,0,0,1],4)</strong>.<br>
+Voir la partie indication pour plus de détails.
+===============================
+# Voici une implémentation possible
+
+def conv_bin(n):
+    if n == 0:
+        return ([0], 1)
+    bits = []
+    while n > 0:
+        b = n % 2
+        n = n // 2
+        bits.append(b)
+    bits.reverse()
+    taille = len(bits)
+    return (bits, taille)
+
+#! exemple
+
+print(conv_bin(9))
+===============================
+[ ["9", "#!\ns=#?\ntry:\n    print(conv_bin(s))\nexcept:\n    print('exception')"],
+  ["1", "#!\ns=#?\ntry:\n    print(conv_bin(s))\nexcept:\n    print('exception')"],
+  ["255", "#!\ns=#?\ntry:\n    print(conv_bin(s))\nexcept:\n    print('exception')"],
+  ["0", "#!\ns=#?\ntry:\n    print(conv_bin(s))\nexcept:\n    print('exception')"] ]
+===============================
+def conv_bin(n):
+
+
+
+#! exemple
+
+print(conv_bin(9))
+===============================
+<ul>
+<li>l'opérateur <strong>//</strong> donne le quotient de la division euclidienne : <strong>5 // 2</strong> donne <strong>2</strong>;</li>
+<li>l'opérateur <strong>%</strong> donne le reste de la division euclidienne : <strong>5 % 2</strong> donne <strong>1</strong> ;</li>
+<li><strong>append</strong> est une méthode qui ajoute un élément à une liste existante.<br>
+Soit <strong>T=[5,2,4]</strong>, alors <strong>T.append(10)</strong> ajoute <strong>10</strong> à la liste <strong>T</strong>. Ainsi, <strong>T</strong> devient <strong>[5,2,4,10]</strong></li>
+<li><strong>reverse</strong> est une méthode qui renverse les éléments d'une liste.
+<br>Soit <strong>T=[5,2,4,10]</strong>. Après <strong>T.reverse()</strong>, la liste devient <strong>[10,4,2,5]</strong></li>
+</ul>
+On remarquera qu'on récupère la représentation binaire d'un entier <strong>n</strong> en partant de la gauche en appliquant successivement les instructions :<br>
+<strong>b = n % 2</strong><br>
+<strong>n = n // 2</strong><br>
+répétées autant que nécessaire.

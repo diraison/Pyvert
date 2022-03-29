@@ -1,0 +1,26 @@
+Calcul
+===============================
+Exercice 2
+===============================
+Compléter l'affectation à la variable <strong>perimetre</strong> par la formule donnant le périmètre d'un rectangle de longueur et de largeur données.
+===============================
+# Solution de l'exercice
+longueur = 5   #?
+largeur = 3    #?
+
+perimetre = 2 * longueur + 2 * largeur
+
+# On pouvait aussi écrire :
+
+perimetre = 2 * (longueur + largeur)
+===============================
+[ ["5", "3", "print(perimetre)"],
+  ["7", "2", "print(perimetre)"],
+  ["8", "4", "print(perimetre)"] ]
+===============================
+longueur = 5   #? ne rien écrire sur cette ligne
+largeur = 3    #? ne rien écrire sur cette ligne
+
+perimetre = 
+===============================
+Le périmètre d'un rectangle est la longueur de son contour.

@@ -1,0 +1,19 @@
+Calcul
+===============================
+Exercice 1
+===============================
+Complétez la ligne pour obtenir le <strong>rayon</strong> en utilisant la variable <strong>diametre</strong>.
+===============================
+#? Solution de l'exercice
+
+rayon = diametre / 2
+===============================
+[ ["diametre = 6",   "print(rayon)"],
+  ["diametre = 10",  "print(rayon)"],
+  ["diametre = 4.8", "print(rayon)"] ]
+===============================
+#? ne rien écrire sur cette ligne
+
+rayon =
+===============================
+Comment obtient-on le rayon à partir du diamètre d'un cercle ? 

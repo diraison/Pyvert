@@ -1,0 +1,17 @@
+Affectation
+===============================
+Exercice 4
+===============================
+Complétez la ligne en affectant la valeur de <strong>2(t+5)(6-t)</strong> à la variable <strong>u</strong>.
+===============================
+#? Solution de l'exercice
+
+u = 2 * (t + 5) * (6 - t)
+===============================
+[ ["t = 0",  "print(u)"],
+  ["t = 2",  "print(u)"],
+  ["t = -1", "print(u)"] ]
+===============================
+#? ne rien écrire sur cette ligne
+
+u = 

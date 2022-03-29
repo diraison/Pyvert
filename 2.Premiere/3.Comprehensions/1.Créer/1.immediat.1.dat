@@ -1,0 +1,19 @@
+Création de tableau
+===============================
+Exercice 1
+===============================
+Complétez la ligne pour créer, par compréhension, un tableau <strong>unites</strong> de longueur <strong>25</strong> et ne contenant que des entiers tous égaux à <strong>1</strong>.
+===============================
+# Voici une solution
+
+unites = [1 for n in range(25)]
+
+
+#! voir le résultat
+print(unites)
+===============================
+[ ["#!\ntry:\n    if unites == [1]*25:\n        print('le bon tableau')\nexcept:\n    print('exception')"] ]
+===============================
+unites = [...]   #! à compléter
+===============================
+Une compréhensien est une boucle <strong>for</strong> précédée des éléments à créer et écrite à l'intérieur du tableau à générer, comme l'expression <strong>[5*i for i in range(10)]</strong> qui correspond à la table de 5 de 5×0 à 5×9.
