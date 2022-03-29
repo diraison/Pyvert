@@ -8,8 +8,8 @@ Ainsi <strong>max_1ou2([-3,8,-7,2,4,1])</strong> renvoie <strong>8</strong> qui 
 # Voici une solution
 
 def max_1ou2(t):
-    maximum = max(t[0], t[1], t[0]+t[1])
-    for i in range(2, len(t)):
+    maximum = t[0]
+    for i in range(1, len(t)):
         m = max(t[i], t[i]+t[i-1])
         if m > maximum:
             maximum = m
