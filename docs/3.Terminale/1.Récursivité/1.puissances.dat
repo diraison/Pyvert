@@ -2,7 +2,7 @@ Récursivité en Python
 ===============================
 Exercice 1
 ===============================
-Complétez la fonction récursive <strong>puissance(x,n)</strong> de paramètres <strong>x</strong> et <strong>n</strong> en utilisant la méthode d'<a href="https://fr.wikipedia.org/wiki/Exponentiation_rapide">exponentiation rapide</a> afin d'obtenir rapidement <strong>x<sup>n</sup></strong>.<br>
+Complétez la fonction récursive <strong>puissance(x,n)</strong> de paramètres <strong>x</strong> et <strong>n</strong> en utilisant la méthode d'<a href="https://fr.wikipedia.org/wiki/Exponentiation%5Frapide">exponentiation rapide</a> afin d'obtenir rapidement <strong>x<sup>n</sup></strong>.<br>
 Remarque : On considère que <strong>n</strong> est un entier strictement positif.
 ===============================
 # Voici une implémentation possible
