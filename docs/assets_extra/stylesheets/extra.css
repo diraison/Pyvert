@@ -38,3 +38,14 @@ label.md-nav__link {
 .question ul {
     margin: 0.5em 1em;
 }
+
+iframe.pyexo {
+    height: 480px;
+    width: 100%;
+}
+
+@media screen and (orientation:portrait) {
+    iframe.pyexo {
+        height: 65vh;
+    }
+}

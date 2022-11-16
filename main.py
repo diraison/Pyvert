@@ -12,12 +12,12 @@ def define_env(env):
     "Hook function"
 
     @env.macro
-    def pyexo(chemin, baseurl="", width="100%", height=480):
+    def pyexo(chemin, baseurl=""):
         with open(chemin) as fichier:
             exercice = fichier.read()
             exo_comp = zlib.compress(exercice.encode())
             exo_cb64 = base64.urlsafe_b64encode(exo_comp).decode()
-            return f"""<iframe src="{baseurl}?clear=titre1:titre2:enonce&exo={exo_cb64}" width={width} height={height}></iframe>"""
+            return f"""<iframe class="pyexo" src="{baseurl}?clear=titre1:titre2:enonce&exo={exo_cb64}"></iframe>"""
 
     @env.macro
     def pyexo_parser(chemin):
