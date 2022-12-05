@@ -1,0 +1,19 @@
+Calcul
+===============================
+Exercice 4
+===============================
+Affecter à la variable <strong>circonference</strong> la formule donnant le périmètre d'un cercle de rayon donné en utilisant la constante PI.
+===============================
+# Solution de l'exercice
+PI = 3.1415926  #  ne pas modifier
+rayon = 4       #? ne pas modifier
+
+circonference = 2 * PI * rayon
+===============================
+[ ["4", "try:\n    print(circonference)\nexcept:\n    print('variable circonference absente')"],
+  ["5", "try:\n    print(circonference)\nexcept:\n    print('variable circonference absente')"],
+  ["6.2", "try:\n    print(circonference)\nexcept:\n    print('variable circonference absente')"] ]
+===============================
+PI = 3.1415926  #  ne pas modifier
+rayon = 4       #? ne pas modifier
+

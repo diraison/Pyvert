@@ -1,0 +1,66 @@
+Dictionnaires
+===============================
+Exercice 2
+===============================
+On considère des tables (des tableaux de dictionnaires) qui contiennent des enregistrements relatifs à des animaux hébergés dans un refuge. Les attributs des enregistrements sont <strong>'nom'</strong>, <strong>'espece'</strong>, <strong>'age'</strong>, <strong>'enclos'</strong>. Voici un exemple d'une telle table :<br>
+<strong>animaux = [ {'nom':'Medor',  'espece':'chien', 'age':5, 'enclos':2},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{'nom':'Titine', 'espece':'chat',  'age':2, 'enclos':5},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{'nom':'Tom',    'espece':'chat',  'age':7, 'enclos':4},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{'nom':'Belle',  'espece':'chien', 'age':6, 'enclos':3},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{'nom':'Mirza',  'espece':'chat',  'age':6, 'enclos':5} ]</strong><br>
+Programmer une fonction <strong>selection_enclos</strong> qui :
+<ul><li>prend en paramètres :
+    <ul><li>une table <strong>table_animaux</strong> contenant des enregistrements relatifs à des animaux (comme dans l'exemple ci-dessus),</li>
+    <li>un numéro d'enclos <strong>num_enclos</strong> ;</li></ul>
+<li>renvoie une table contenant les enregistrements de <strong>table_animaux</strong> dont l'attribut <strong>'enclos'</strong> est <strong>num_enclos</strong>.</li></ul>
+Exemples avec la table <strong>animaux</strong> ci-dessus:
+<ul>
+<li><strong>selection_enclos(animaux,5)</strong> renvoie <strong>[{'nom':'Titine', 'espece':'chat', 'age':2, 'enclos':5}, {'nom':'Mirza', 'espece':'chat', 'age':6, 'enclos':5}]</strong></li>
+<li><strong>selection_enclos(animaux,2)</strong> renvoie <strong>[{'nom':'Medor', 'espece':'chien', 'age':5, 'enclos':2}]</strong></li>
+<li><strong>selection_enclos(animaux,7)</strong> renvoie <strong>[]</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def selection_enclos(table_animaux, num_enclos):
+    table = []
+    for animal in table_animaux:
+        if animal['enclos'] == num_enclos:
+            table.append(animal)
+    return table
+
+# autre solution utilisant une compréhension
+
+def selection_enclos(table_animaux, num_enclos):
+    return [animal for animal in table_animaux if animal['enclos'] == num_enclos]
+
+
+animaux = [ {'nom':'Medor',  'espece':'chien', 'age':5, 'enclos':2},
+            {'nom':'Titine', 'espece':'chat',  'age':2, 'enclos':5},
+            {'nom':'Tom',    'espece':'chat',  'age':7, 'enclos':4},
+            {'nom':'Belle',  'espece':'chien', 'age':6, 'enclos':3},
+            {'nom':'Mirza',  'espece':'chat',  'age':6, 'enclos':5} ]
+#! exemple
+print(selection_enclos(animaux,5))
+===============================
+[ ["animaux", "5", "#!\na=#?\ns=#?\ntry:\n    print(selection_enclos(a,s))\nexcept:\n    print('exception')"],
+  ["animaux", "2", "#!\na=#?\ns=#?\ntry:\n    print(selection_enclos(a,s))\nexcept:\n    print('exception')"],
+  ["animaux", "7", "#!\na=#?\ns=#?\ntry:\n    print(selection_enclos(a,s))\nexcept:\n    print('exception')"],
+  ["animaux", "4", "#!\na=#?\ns=#?\ntry:\n    print(selection_enclos(a,s))\nexcept:\n    print('exception')"] ]
+===============================
+def selection_enclos(table_animaux, num_enclos):
+
+
+
+
+animaux = [ {'nom':'Medor',  'espece':'chien', 'age':5, 'enclos':2},
+            {'nom':'Titine', 'espece':'chat',  'age':2, 'enclos':5},
+            {'nom':'Tom',    'espece':'chat',  'age':7, 'enclos':4},
+            {'nom':'Belle',  'espece':'chien', 'age':6, 'enclos':3},
+            {'nom':'Mirza',  'espece':'chat',  'age':6, 'enclos':5} ]
+#! exemple
+print(selection_enclos(animaux,5))

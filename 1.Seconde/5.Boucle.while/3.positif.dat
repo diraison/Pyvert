@@ -1,0 +1,17 @@
+Boucle conditionnelle
+===============================
+Exercice 3
+===============================
+Complétez le programme pour qu'il continue tant que l'on saisit un nombre entier strictement positif.
+===============================
+# Voici la solution
+
+nombre = int(input("Saisissez un entier"))
+while nombre > 0:
+    nombre = int(input("Continuez"))
+===============================
+[ [ "25", "17", "0", "print(nombre)" ], [ "36", "-1", "print(nombre)" ], [ "1", "3", "0", "print(nombre)" ], [ "-10", "print(nombre)" ] ]
+===============================
+nombre = int(input("Saisissez un entier"))
+while ...:            # ligne à compléter
+    nombre = int(input("Continuez"))

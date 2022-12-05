@@ -1,0 +1,30 @@
+Chaîne de caractères
+===============================
+Exercice 4
+===============================
+Programmer une fonction <strong> renverse</strong>, prenant en paramètre une chaîne de caractères non vide <strong>mot</strong>  et renvoie une chaîne de caractères en inversant ceux de la chaîne mot.<br>
+Exemple : <strong>renverse("informatique")</strong> renvoie <strong>"euqitamrofni"</strong>.
+===============================
+# Voici une implémentation possible
+
+def renverse(mot):
+    s = ""
+    for lettre in mot:
+        s = lettre + s
+    return s
+
+#! exemple
+
+print(renverse("informatique"))
+===============================
+[ ["\"informatique\"", "#!\ns=#?\ntry:\n    print(renverse(s))\nexcept:\n    print('exception')"],
+  ["\"mot\"", "#!\ns=#?\ntry:\n    print(renverse(s))\nexcept:\n    print('exception')"],
+  ["\"kayak\"", "#!\ns=#?\ntry:\n    print(renverse(s))\nexcept:\n    print('exception')"] ]
+===============================
+def renverse(mot):
+
+
+
+#! exemple
+
+print(renverse("informatique"))

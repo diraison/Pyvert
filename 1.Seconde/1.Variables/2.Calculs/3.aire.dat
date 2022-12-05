@@ -1,0 +1,19 @@
+Calcul
+===============================
+Exercice 3
+===============================
+Affecter à la variable <strong>aire</strong> la formule donnant l'aire d'un rectangle de longueur et de largeur données.
+===============================
+# Solution de l'exercice
+longueur = 9       #? ne pas supprimer
+largeur = 7        #? ne pas supprimer
+
+aire = longueur * largeur
+===============================
+[ ["9", "7", "try:\n    print(aire)\nexcept:\n    print('variable aire absente')"],
+  ["5", "3", "try:\n    print(aire)\nexcept:\n    print('variable aire absente')"],
+  ["7.4", "4.8", "try:\n    print(aire)\nexcept:\n    print('variable aire absente')"] ]
+===============================
+longueur = 9       #? ne pas supprimer
+largeur = 7        #? ne pas supprimer
+

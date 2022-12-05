@@ -1,0 +1,48 @@
+Nombres
+===============================
+Exercice 3
+===============================
+Programmer la fonction <strong>multiplication</strong> prenant en paramètres deux nombres entiers <strong>n1</strong> et <strong>n2</strong>, et qui renvoie le produit de ces deux nombres. Les seules opérations autorisées sont l'addition et la soustraction.<br>
+Exemples :
+<ul>
+<li><strong>multiplication(3,5)</strong> renvoie <strong>15</strong></li>
+<li><strong>multiplication(-4,-8)</strong> renvoie <strong>32</strong></li>
+<li><strong>multiplication(-2,6)</strong> renvoie <strong>-12</strong></li>
+<li><strong>multiplication(-2,0)</strong> renvoie <strong>0</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def multiplication(n1, n2):
+    if n1 < 0:
+        n1 = -n1   # mathématiquement
+        n2 = -n2   # (-a)*(-b) = a*b
+    produit = 0
+    while n1 > 0:
+        produit += n2
+        n1 -= 1
+    return produit
+
+
+#! exemple
+
+print(multiplication(3,5))
+print(multiplication(-4,-8))
+===============================
+[ ["3", "5", "#!\na=#?\nb=#?\ntry:\n    print(multiplication(a,b))\nexcept:\n    print('exception')"],
+  ["-4", "-8", "#!\na=#?\nb=#?\ntry:\n    print(multiplication(a,b))\nexcept:\n    print('exception')"],
+  ["-2", "6", "#!\na=#?\nb=#?\ntry:\n    print(multiplication(a,b))\nexcept:\n    print('exception')"],
+  ["-2", "0", "#!\na=#?\nb=#?\ntry:\n    print(multiplication(a,b))\nexcept:\n    print('exception')"],
+  ["7", "-2", "#!\na=#?\nb=#?\ntry:\n    print(multiplication(a,b))\nexcept:\n    print('exception')"],
+  ["0", "5", "#!\na=#?\nb=#?\ntry:\n    print(multiplication(a,b))\nexcept:\n    print('exception')"] ]
+===============================
+def multiplication(n1, n2):
+
+
+
+#! exemple
+
+print(multiplication(3,5))
+print(multiplication(-4,-8))
+===============================
+Commencez par implémenter la multiplication de deux nombres positifs par la répétition d'une addition (3 * 5 = 5 + 5 + 5).<br> Adaptez ensuite le programme pour gérer le cas des nombres négatifs.

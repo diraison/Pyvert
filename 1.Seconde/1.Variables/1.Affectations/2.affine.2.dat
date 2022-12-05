@@ -1,0 +1,17 @@
+Affectation
+===============================
+Exercice 2
+===============================
+Complétez la ligne en affectant la valeur de <strong>-3x+7</strong> à la variable <strong>y</strong>.
+===============================
+#? Solution de l'exercice
+
+y = -3 * x + 7
+===============================
+[ ["x = 1",  "print(y)"],
+  ["x = 2",  "print(y)"],
+  ["x = -1", "print(y)"] ]
+===============================
+#? ne rien écrire sur cette ligne
+
+y = 

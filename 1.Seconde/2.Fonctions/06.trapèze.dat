@@ -1,0 +1,18 @@
+Fonction
+===============================
+Exercice 6
+===============================
+Complétez la fonction <strong>aire</strong> qui calcule et renvoie l'aire d'un trapèze. Elle a pour paramètres : <strong>B</strong>, <strong>b</strong>, <strong>h</strong> qui représentent respectivement la grande base, la petite base et la hauteur.
+===============================
+# Voici la solution
+
+def aire(B, b, h):
+    return (B + b) * h / 2
+===============================
+[ [ "aire(5,3,4)", "z=#?\nprint(z)" ],
+  [ "aire(3,3,3)", "z=#?\nprint(z)" ],
+  [ "aire(8,2,0)", "z=#?\nprint(z)" ] ]
+===============================
+def aire():
+===============================
+Comment calcule-t-on l'aire d'un trapèze ? Si vous ne savez pas, faites alors une recherche sur internet.

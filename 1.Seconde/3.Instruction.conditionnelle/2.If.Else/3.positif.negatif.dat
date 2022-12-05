@@ -1,0 +1,25 @@
+Instruction conditionnelle : if else
+===============================
+Exercice 3
+===============================
+Complétez le programme pour qu'il affiche :<ul style="margin: 0">
+<li>"<i>Ce nombre est positif.</i>" quand le nombre saisi est supérieur ou égal à 0</li>
+<li>"<i>Ce nombre est négatif.</i>" quand le nombre saisi est strictement inférieur à 0</li></ul>
+===============================
+# Voici une réponse possible
+
+x = float(input("Saisir un nombre : "))
+
+if x >= 0:
+    print("Ce nombre est positif.")
+else:
+    print("Ce nombre est négatif.")
+===============================
+[ ["4",""], ["8.0",""], ["0",""], ["-3",""], ["-0.1",""] ]
+===============================
+x = float(input("Saisir un nombre : "))
+
+if x ... :
+    print("Ce nombre est positif.")
+...
+    print("Ce nombre est négatif.")

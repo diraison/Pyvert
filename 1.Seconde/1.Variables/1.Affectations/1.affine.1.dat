@@ -1,0 +1,19 @@
+Affectation
+===============================
+Exercice 1
+===============================
+Complétez la ligne en affectant la valeur de <strong>4x+9</strong> à la variable <strong>y</strong>.
+===============================
+#? Solution de l'exercice
+
+y = 4 * x + 9
+===============================
+[ ["x = 1",  "print(y)"],
+  ["x = 5",  "print(y)"],
+  ["x = -3", "print(y)"] ]
+===============================
+#? ne rien écrire sur cette ligne
+
+y =
+===============================
+En Python il faut écrire explicitement chaque calcul.

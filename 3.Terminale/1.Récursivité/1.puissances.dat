@@ -1,0 +1,34 @@
+Récursivité en Python
+===============================
+Exercice 1
+===============================
+Complétez la fonction récursive <strong>puissance(x,n)</strong> de paramètres <strong>x</strong> et <strong>n</strong> en utilisant la méthode d'<a href="https://fr.wikipedia.org/wiki/Exponentiation%5Frapide">exponentiation rapide</a> afin d'obtenir rapidement <strong>x<sup>n</sup></strong>.<br>
+Remarque : On considère que <strong>n</strong> est un entier strictement positif.
+===============================
+# Voici une implémentation possible
+
+def puissance(x,n):
+    if n == 1:
+        return x
+    elif n % 2 == 0:
+        return puissance(x*x, n//2)
+    else:
+        return x * puissance(x*x, n//2)
+
+p = puissance(14,5)   #? ne pas supprimer
+print(p)
+===============================
+[ ["puissance(14,5)",""], ["puissance(23,1)",""], ["puissance(10,6)",""], ["puissance(7,2)",""] ]
+===============================
+def puissance(x,n):
+    if n == 1:
+        return x
+    elif           :
+        return puissance(        )
+    else:
+        return 
+
+p = puissance(14,5)   #? ne pas supprimer
+print(p)
+===============================
+La division entière d'un nombre <strong>n</strong> par 2 se réalise avec <strong>n // 2</strong>, quant au reste il s'obtient avec <strong>n % 2</strong>.

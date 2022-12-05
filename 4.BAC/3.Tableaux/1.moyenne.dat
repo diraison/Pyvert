@@ -1,0 +1,37 @@
+Tableaux
+===============================
+Exercice 1
+===============================
+Soit le couple <strong>(note,coefficient)</strong> :
+<ul><li><strong>note</strong> est un nombre de type flottant (float) compris entre 0 et 20 ;</li>
+<li><strong>coefficient</strong> est un nombre entier positif.</li></ul>
+Les résultats aux évaluation d'un élève sont regroupés dans une liste composée de couples <strong>(note,coefficient)</strong>.<br>
+Écrire une fonction <strong>moyenne</strong> qui renvoie la moyenne pondérée de cette liste donnée en paramètre.<br>
+Exemple : <strong>moyenne([(15,2),(9,1),(12,3)])</strong> renvoie <strong>12.5</strong> qui est le résultat du calcul $\frac{2 \times 15 + 1 \times 9 + 3 \times 12}{2 + 1 + 3}$.
+===============================
+# Voici une implémentation possible
+
+def moyenne(liste):
+    points = 0
+    coeffs = 0
+    for note, coefficient in liste:
+        points += coefficient * note
+        coeffs += coefficient
+    return points / coeffs
+
+#! exemple
+
+print(moyenne([(15,2),(9,1),(12,3)]))
+===============================
+[ ["[(15,2),(9,1),(12,3)]", "#!\ns=#?\ntry:\n    print(moyenne(s))\nexcept:\n    print('exception')"],
+  ["[(10,1),(16,1)]", "#!\ns=#?\ntry:\n    print(moyenne(s))\nexcept:\n    print('exception')"],
+  ["[(14,1)]", "#!\ns=#?\ntry:\n    print(moyenne(s))\nexcept:\n    print('exception')"],
+  ["[(8,2)]", "#!\ns=#?\ntry:\n    print(moyenne(s))\nexcept:\n    print('exception')"] ]
+===============================
+def moyenne(liste):
+
+
+
+#! exemple
+
+print(moyenne([(15,2),(9,1),(12,3)]))

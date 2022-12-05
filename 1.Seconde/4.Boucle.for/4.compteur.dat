@@ -1,0 +1,27 @@
+Boucle bornée
+===============================
+Exercice 4
+===============================
+Modifiez le programme suivant pour qu'il affiche le nombre de lettres qu'il y a dans la variable mot.
+===============================
+# Voici la solution
+
+mot = "informatique"  #? exemple
+
+n = 0                 # le compteur
+for lettre in mot:
+    n = n+1           # 1 lettre de plus
+
+print(mot, "contient", n, "lettres")
+===============================
+[ ['"informatique"', ""], ['"A"', ""], ['"la"', ""], ['"plage"', ""] ]
+===============================
+mot = "informatique"  #? exemple
+
+n = 0                 # le compteur
+for lettre in mot:
+    print(lettre)     # ligne à remplacer
+
+print(mot, "contient", n, "lettres")
+===============================
+La variable <strong>n</strong> sert de compteur. Il faut donc l'incrémenter, c'est à dire l'augmenter de 1, à chaque itération de la boucle for.

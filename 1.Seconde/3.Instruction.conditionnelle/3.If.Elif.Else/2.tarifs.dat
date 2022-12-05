@@ -1,0 +1,32 @@
+Instruction conditionnelle : if elif else
+===============================
+Exercice 2
+===============================
+Complétez la fonction <strong>tarif(age)</strong> pour qu'elle renvoie la chaîne de caractères :<ul style="margin: 0">
+<li>"<i>plein</i>" &nbsp; lorsque <strong>age</strong> est supérieur ou égal à 18</li>
+<li>"<i>reduit</i>" &nbsp; lorsque <strong>age</strong> est compris entre 12 inclus et 18 exclu</li>
+<li>"<i>gratuit</i>" &nbsp; lorsque <strong>age</strong> est inférieur à 12</li></ul>
+===============================
+# Solution de l'exercice
+
+def tarif(age):
+    if age >= 18:
+        return "plein"
+    elif age >= 12:
+        return "reduit"
+    else:
+        return "gratuit"
+
+age = int(input("Quel est votre âge ?"))
+
+print("Vous bénéficiez du tarif :", tarif(age))
+===============================
+[ ["10",""], ["16",""], ["20",""], ["12",""], ["18",""] ]
+===============================
+def tarif(age):
+    return "c'est trop cher"
+
+
+age = int(input("Quel est votre âge ?"))
+
+print("Vous bénéficiez du tarif :", tarif(age))

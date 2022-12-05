@@ -1,0 +1,23 @@
+Fonction
+===============================
+Exercice 5
+===============================
+Corrigez la fonction <strong>produit</strong> pour qu'elle prenne deux paramètres <strong>a</strong> et <strong>n</strong>, et renvoie leur produit.
+===============================
+# Une solution simple
+
+def produit(a, n):
+    return a * n
+
+# le produit de deux nombres est le
+# résultat de leur multiplication
+===============================
+[ ["produit(0,7)",  "P=#?\nprint(P)"],
+  ["produit(5,4)",  "P=#?\nprint(P)"],
+  ["produit(0,0)",  "P=#?\nprint(P)"],
+  ["produit(-8,3)", "P=#?\nprint(P)"] ]
+===============================
+def produit(a):
+    return a + a
+===============================
+À quoi correspond le produit de <strong>a</strong> et <strong>n</strong> ?
