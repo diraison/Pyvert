@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title id="titre"></title>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.11.3/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trinketapp/skulpt-dist@0.11.1.19/skulpt.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trinketapp/skulpt-dist@0.11.1.19/skulpt-stdlib.js"></script>
+	<link  href="https://cdn.jsdelivr.net/npm/codemirror@5.33.0/lib/codemirror.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/codemirror@5.33.0/lib/codemirror.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/codemirror@5.33.0/mode/python/python.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.2/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.jsdelivr.net/npm/pako/dist/pako.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/diraison/GenPyExo@latest/verifpyexo.js"></script>
+	<link  href="https://cdn.jsdelivr.net/gh/diraison/GenPyExo/misc/style.css" rel="stylesheet">
+        <style>
+article{margin-top:10px}
+div#enonce{font-size:14pt;margin-bottom:19pt;margin-top:20px;padding-left:16px;padding-right:16px}
+header#titre1:empty{display:none}
+h2#titre2:empty{display:none}
+div#enonce:empty{display:none}
+div.travail{width:45%;}
+div.reponses{width:51%;}
+div.reponses{margin-left:0.65%;padding-left:0.65%;}
+div.CodeMirror{font-size:12pt;font-weight:bold;}
+button{font-size:10pt;font-weight:bold;color:darkblue;}
+</style>
+</head>
+<body onload="genererReponses()">
+<header id="titre1"></header>
+<article>
+	<h2 id="titre2"></h2>
+	<div id="enonce" class="enonce"></div>
+	<div class="travail" id="travail">
+		<textarea id="code"></textarea>
+		<pre id="erreur"></pre>
+		<button type="button" onclick="executer()" id="execfb" disabled>Exécuter</button> 
+		<button type="button" onclick="verifier()" id="verifb" style="float: right; right: 3%;" disabled>Vérifier la réponse</button> 
+	</div>
+	<div class="reponses" id="resultat" style="visibility:hidden">
+		<pre id="sortie"></pre>
+		<div id="dessin"></div>
+	</div>
+	<pre id="solution" style="display:none"></pre>
+        <pre id="tests" style="display:none">[]</pre>
+</article>
+<script>
+var exo = get_exercice_from_url();
+if (exo !== null) {
+    initialiser_exercice(exo);
+}
+clear_elements_from_url();
+
+alltests = eval(document.getElementById("tests").innerHTML);
+
+CodeMirror.keyMap.default.Tab = function(cm) { cm.execCommand(cm.getOption("indentWithTabs") ? "insertTab" : "insertSoftTab"); };
+editeur = CodeMirror.fromTextArea(document.getElementById("code"), { mode: "python", lineNumbers: true, indentWithTabs: false, indentUnit: 4, tabSize: 4 });
+function autoresize(event) {
+    if (1.2 * document.documentElement.clientHeight > document.documentElement.clientWidth) {
+        var hauteurEditeur = Math.floor(document.documentElement.clientHeight * 0.55);
+    } else {
+        var hauteurEditeur = document.documentElement.clientHeight - document.getElementById("travail").offsetTop - 100;
+    }
+    editeur.setSize(null, hauteurEditeur === undefined ? 370 : hauteurEditeur);
+}
+window.addEventListener('resize', autoresize);
+autoresize(null);
+</script>
+</body>
+</html>

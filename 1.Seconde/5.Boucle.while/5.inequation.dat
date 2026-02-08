@@ -1,0 +1,21 @@
+Boucle conditionnelle
+===============================
+Exercice 5
+===============================
+Complétez le programme pour obtenir le premier entier positif <strong>n</strong> telle que <strong>n² > 30(n+55)</strong>.
+===============================
+# Voici la solution
+
+n = 0
+while n * n <= 30 * (n + 55):
+    n = n + 1
+print("Le premier entier positif est", n)
+===============================
+[ [ "" ] ]
+===============================
+n = 0
+while ...:
+    n = ...
+print("Le premier entier positif est", n)
+===============================
+On commence avec zéro, et tant que le nombre ne convient pas on passe au nombre suivant.

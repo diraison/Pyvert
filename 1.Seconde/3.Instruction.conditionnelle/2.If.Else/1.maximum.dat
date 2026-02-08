@@ -1,0 +1,29 @@
+Instruction conditionnelle : if else
+===============================
+Exercice 1
+===============================
+Complétez le programme pour qu'il affecte à la variable maximum le plus grand des deux nombres <strong>a</strong> et <strong>b</strong>, sachant que leur valeur peut changer.
+===============================
+# Voici une réponse possible
+
+a = 25    #? exemple pouvant changer
+b = 17    #? exemple pouvant changer
+
+if a >= b:
+    maximum = a
+else:
+    maximum = b
+
+print("Le maximum est", maximum)
+===============================
+[ ["25","17",""], ["32","56",""], ["-12","-9",""] ]
+===============================
+a = 25    #? exemple pouvant changer
+b = 17    #? exemple pouvant changer
+
+if ...:
+    ....
+else:
+    ...
+
+print("Le maximum est", maximum)

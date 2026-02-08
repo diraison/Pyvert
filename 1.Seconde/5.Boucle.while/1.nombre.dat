@@ -1,0 +1,19 @@
+Boucle conditionnelle
+===============================
+Exercice 1
+===============================
+Complétez le programme pour qu'il s'arrête dès que l'on saisit un nombre entier supérieur ou égal à 1000.
+===============================
+# Voici la solution
+
+n = int(input("Saisissez un nombre"))
+while n < 1000:
+    n = int(input("Recommencez"))
+print("Le programme s'est terminé avec", n)
+===============================
+[ [ "3000", "" ], [ "1000", "" ], [ "999", "1000", "" ], [ "40", "100", "1000", "" ] ]
+===============================
+n = int(input("Saisissez un nombre"))
+while ...:       # ligne à compléter
+    n = int(input("Recommencez"))
+print("Le programme s'est terminé avec", n)

@@ -1,0 +1,18 @@
+Boucle bornée
+===============================
+Exercice 3
+===============================
+Modifiez le programme suivant pour qu'il affiche la table de multiplication de 5, pour les nombres de 0 à 10 inclus.
+<ul style="list-style:none"><li>5 * 0 = 0</li><li>5 * 1 = 5</li><li>...</li><li>5 * 10 = 50</li></ul>
+===============================
+# Voici la solution
+
+for n in range(11):
+    print(5, "*", n, "=", 5 * n)
+===============================
+[ [ "" ] ]
+===============================
+for n in range(7):
+    print(n, "+", 1, "<", n + 2)
+===============================
+Observez bien les arguments utilisés avec la fonction <strong>print()</strong> pour les changer et obtenir ce qui est demandé.

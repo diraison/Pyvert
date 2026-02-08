@@ -1,0 +1,20 @@
+Algorithme
+===============================
+Exercice 1
+===============================
+Affecter à la variable <strong>resultat</strong> la formule correspondant à l'application de l'algorithme suivant à un nombre <strong>x</strong>.
+<ul><li>Prendre un nombre et le multiplier par 2.</li>
+<li>Soustraire 6 à ce produit et lui additionner le nombre de départ.</li>
+<li>Diviser cette somme par 3 et donner le résultat ainsi obtenu.</li></ul>
+===============================
+# Solution de l'exercice
+x = 10     #? ne pas modifier
+
+resultat = ((x * 2) - 6 + x) / 3
+===============================
+[ ["10", "try:\n    print(resultat)\nexcept:\n    print('variable resultat absente')"],
+  ["14", "try:\n    print(resultat)\nexcept:\n    print('variable resultat absente')"],
+  ["5",  "try:\n    print(resultat)\nexcept:\n    print('variable resultat absente')"] ]
+===============================
+x = 10     #? ne pas supprimer
+

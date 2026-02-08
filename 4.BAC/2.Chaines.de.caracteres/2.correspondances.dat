@@ -1,0 +1,43 @@
+Chaîne de caractères
+===============================
+Exercice 2
+===============================
+On considère des mots à trous : ce sont des chaînes de caractères contenant uniquement des majuscules et des caractères '*'. Par exemple 'INFO*MA*IQUE', '***I***E**' et '*S*' sont des mots à trous.
+Programmer une fonction <strong>correspond</strong> qui prend en paramètres deux chaînes de caractères <strong>mot</strong> et <strong>mot_a_trous</strong> où <strong>mot_a_trous</strong> est un mot à trous, et renvoie :
+<ul>
+<li><strong>True</strong> si on peut obtenir mot en remplaçant convenablement les caractères '*' de mot_a_trous.</li>
+<li><strong>False</strong> sinon.</li>
+</ul>
+Exemples :
+<ul>
+<li><strong>correspond('INFORMATIQUE', 'INFO*MA*IQUE')</strong> renvoie <strong>True</strong></li>
+<li><strong>correspond('AUTOMATIQUE', 'INFO*MA*IQUE')</strong> renvoie <strong>False</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def correspond(mot, mot_a_trous):
+    if len(mot) != len(mot_a_trous):
+        return False
+    for i in range(len(mot_a_trous)):
+        if mot_a_trous[i] != '*' and mot[i] != mot_a_trous[i]:
+            return False
+    return True
+
+#! exemple
+
+print(correspond('INFORMATIQUE', 'INFO*MA*IQUE'))
+===============================
+[ ["'INFORMATIQUE'", "'INFO*MA*IQUE'", "#!\ns=#?\nt=#?\ntry:\n    print(correspond(s,t))\nexcept:\n    print('exception')"],
+  ["'AUTOMATIQUE'", "'INFO*MA*IQUE'", "#!\ns=#?\nt=#?\ntry:\n    print(correspond(s,t))\nexcept:\n    print('exception')"],
+  ["'OSE'", "'*S*'", "#!\ns=#?\nt=#?\ntry:\n    print(correspond(s,t))\nexcept:\n    print('exception')"],
+  ["'OS'", "'*S*'", "#!\ns=#?\nt=#?\ntry:\n    print(correspond(s,t))\nexcept:\n    print('exception')"],
+  ["'ASCII'", "'*S*'", "#!\ns=#?\nt=#?\ntry:\n    print(correspond(s,t))\nexcept:\n    print('exception')"] ]
+===============================
+def correspond(mot, mot_a_trous):
+
+
+
+#! exemple
+
+print(correspond('INFORMATIQUE', 'INFO*MA*IQUE'))

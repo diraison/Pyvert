@@ -1,0 +1,15 @@
+Boucle bornée
+===============================
+Exercice 1
+===============================
+Modifiez le programme suivant pour qu'il affiche 10 fois la phrase <strong>"Je programme en Python"</strong>.
+===============================
+# Voici la solution
+
+for n in range(10):
+    print("Je programme en Python")
+===============================
+[ [ "" ] ]
+===============================
+for n in range(3):
+    print("C'est quoi Python ?")

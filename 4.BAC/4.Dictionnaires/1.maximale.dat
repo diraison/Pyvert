@@ -1,0 +1,46 @@
+Dictionnaires
+===============================
+Exercice 1
+===============================
+Sur le réseau social TipTop, on s’intéresse au nombre de « like » des abonnés. Les données sont stockées dans des dictionnaires où les clés sont les pseudos et les valeurs correspondantes sont les nombres de « like » comme ci-dessous :<br>
+<strong>{'Bob': 102, 'Ada': 201, 'Alice': 103, 'Tim': 50}</strong><br>
+Écrire une fonction <strong>max_dico</strong> qui :
+<ul><li>Prend en paramètre un dictionnaire <strong>dico</strong> non vide dont les clés sont des chaînes de caractères et les valeurs associées sont des entiers ;</li>
+<li>Renvoie un tuple dont :
+    <ul><li>La première valeur est la clé du dictionnaire associée à la valeur maximale ;</li>
+    <li>La seconde valeur est la première valeur maximale présente dans le
+dictionnaire.</li></ul>
+</li>
+</ul>
+Exemples :
+<ul>
+<li><strong>max_dico({'Bob':102, 'Ada':201, 'Alice':103, 'Tim':50})</strong> renvoie <strong>('Ada', 201)</strong></li>
+<li><strong>max_dico({'Alan':222, 'Ada':201, 'Eve':220, 'Tim':50})</strong> renvoie <strong>('Alan', 222)</strong></li>
+</ul>
+===============================
+# Voici une implémentation possible
+
+def max_dico(dico):
+    clemax = None
+    for cle in dico:
+        if clemax is None or dico[clemax] < dico[cle]:
+            clemax = cle
+    return (clemax, dico[clemax])
+
+
+#! exemple
+
+print(max_dico({'Bob':102, 'Ada':201, 'Alice':103, 'Tim':50}))
+===============================
+[ ["{'Bob':102,'Ada':201,'Alice':103,'Tim':50}", "#!\ns=#?\ntry:\n    print(max_dico(s))\nexcept:\n    print('exception')"],
+  ["{'Alan':222,'Ada':201,'Eve':220,'Tim':50}", "#!\ns=#?\ntry:\n    print(max_dico(s))\nexcept:\n    print('exception')"],
+  ["{'Alice':200,'Eve':200}", "#!\ns=#?\ntry:\n    print(max_dico(s))\nexcept:\n    print('exception')"],
+  ["{'Ada':42}", "#!\ns=#?\ntry:\n    print(max_dico(s))\nexcept:\n    print('exception')"] ]
+===============================
+def max_dico(dico):
+
+
+
+#! exemple
+
+print(max_dico({'Bob':102, 'Ada':201, 'Alice':103, 'Tim':50}))

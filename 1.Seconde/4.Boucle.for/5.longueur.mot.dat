@@ -1,0 +1,27 @@
+Boucle bornée
+===============================
+Exercice 5
+===============================
+Complétez le programme de la fonction <strong>compter_lettres(mot)</strong> pour qu'elle renvoie le nombre de lettres de la chaîne de caractères <strong>mot</strong> passée en argument.
+===============================
+# Voici la solution
+
+def compter_lettres(mot):
+    n = 0              # initialiser le compteur
+    for lettre in mot: # parcourir les lettres du mot
+        n = n + 1      # incrémenter le compteur
+    return n           # renvoyer le compteur
+
+mot = "mathématiques"  #? exemple
+
+print(mot, ":", compter_lettres(mot))
+===============================
+[ ['"mathématiques"', ""], ['"informatique"', ""], ['"sciences"', ""] ]
+===============================
+def compter_lettres(mot):
+    # compléter le programme de la fonction
+    return 0
+
+mot = "mathématiques"  #? exemple
+
+print(mot, ":", compter_lettres(mot))

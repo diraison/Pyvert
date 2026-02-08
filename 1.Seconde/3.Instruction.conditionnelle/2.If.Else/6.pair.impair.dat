@@ -1,0 +1,30 @@
+Instruction conditionnelle : if else
+===============================
+Exercice 6
+===============================
+Complétez l'instruction conditionnelle pour que le programme affiche la réponse qui convient.<br>
+Vous utiliserez l'opérateur modulo % qui donne le reste de la division euclidienne.<br>
+Ainsi <span style="color:blue;">26 % 10 == 6</span> puisque 26 divisé par 10 fait 2 et il reste de 6.
+===============================
+# Solution de l'exercice
+
+n = int( input("Saisir un nombre entier") )
+
+## On teste si le reste de la division par 2 est
+## 0 pour conclure qu'il s'agit d'un nombre pair
+
+if n % 2 == 0:
+    print(n, "est un nombre pair")
+else:
+    print(n, "est un nombre impair")
+===============================
+[ ["0",""], ["1",""], ["5",""], ["8",""], ["123",""], ["2018",""] ]
+===============================
+n = int( input("Saisir un nombre entier") )
+
+if           :
+    print(n, "est un nombre pair")
+else:
+    print(n, "est un nombre impair")
+===============================
+Un nombre est pair quand, divisé par 2, on obtient un reste égal à zéro. Vous devez écrire cette condition avec l'opérateur % qui donne le reste de la division d'un nombre par un autre.

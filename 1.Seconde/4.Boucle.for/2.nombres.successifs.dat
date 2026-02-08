@@ -1,0 +1,15 @@
+Boucle bornée
+===============================
+Exercice 2
+===============================
+Modifiez le programme suivant pour qu'il affiche les nombres entiers de 10 à 15 inclus, chacun sur une ligne.
+===============================
+# Voici la solution
+
+for n in range(10, 16):
+    print(n)
+===============================
+[ [ "" ] ]
+===============================
+for n in range(4, 8):
+    print(2)

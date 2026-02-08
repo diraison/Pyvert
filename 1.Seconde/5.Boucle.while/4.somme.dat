@@ -1,0 +1,24 @@
+Boucle conditionnelle
+===============================
+Exercice 4
+===============================
+Complétez le programme pourqu'il calcule la somme des nombres saisis. Le programme doit se terminer en affichant le total lorsqu'on saisit une chaîne vide.<br>
+On pourra utiliser la fonction <strong>float()</strong> pour convertir une chaîne de caractères en un nombre flottant (<strong>float("12.5")</strong> donne <strong>12.5</strong>).
+===============================
+# Voici la solution
+
+somme = 0.0
+nombre = "0"
+while nombre != "":
+    somme = somme + float(nombre)
+    nombre = input("Saisissez un nombre (ou rien)")
+print("total:", somme)
+===============================
+[ [ "5", "3", "", "" ], [ "8", "", "" ], [ "10", "20", "70", "", "" ] ]
+===============================
+somme = 0.0
+nombre = "0"
+while ...:       # à compléter
+    somme = ...  # à compléter
+    nombre = input("Saisissez un nombre (ou rien)")
+print("total:", somme)
